@@ -1,0 +1,129 @@
+/* .rubik-scribble-regular {
+  font-family: "  ;
+  font-weight: 400;
+  font-style: normal;
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+  line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+h2 {
+  /* parte 4 */
+  font-size: 6rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+h3 {
+  font-size: 5rem;
+}
+h4 {
+  font-size: 4.5rem;
+}
+h5 {
+  font-size: 4rem;
+}
+h6 {
+  font-size: 3.5rem;
+}
+
+/* parte 2 */
+a {
+  /* tirar as linhas dos links... */
+  text-decoration: none;
+}
+
+/* parte 4 */
+p{
+  margin-bottom: 3rem;
+}
+
+.responsive-table {
+  overflow: hidden;
+/* - controla se o conteúdo de um elemento exceder as dimensões de sua caixa. Neste caso, definir overflow como hidden
+inicialmente esconde qualquer conteúdo que exceda a área delimitada do elemento. */
+  overflow-x: auto;
+  /* barra de rolagem horizontal. no caso coloca mais conteudo para exceder pra poder manipular a barra ou mover... */
+}
+table {
+  min-width: 360px;
+  /* largura minima da tabela padrao */
+  width: 100%;
+  /* permite que a tabela se ajuste dinamicamente ao espaço disponível, tornando-a responsiva e capaz de se adaptar 
+  a diferentes larguras de tela */
+  border-collapse: collapse;
+  /* maneira como as bordas das células da tabela são exibidas. */
+}
+table caption {
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+table td, table th {
+  white-space: nowrap;
+  /* impede que o conteúdo dentro das células da tabela quebre em várias linhas. */
+  padding: 1rem;
+  /* espaçamento interno de todas as células da tabela em todas as direções (topo, direita, baixo, esquerda)  */
+  text-align: left;
+  /* alinha o texto dentro das células à esquerda */
+  border: 0.1rem solid var(--light-gray-color)
+  /* Define uma borda sólida em torno de cada célula da tabela com uma espessura  */
+}
+
+tfoot td, table th {
+  background: var(--light-gray-color);
+  /* define a cor de fundo dos elementos especificados no caso cor de fundo no cabeçalhos e rodapé da tabela */
+}
+.modal { /* Estiliza elementos com a classe modal */
+  display: none; /* Torna o modal invisível por padrão */
+  position: fixed; /* Define a posição como fixa */
+  z-index: 1; /* Define a profundidade de camada */
+  padding-top: 60px; /* Adiciona 60 pixels de preenchimento no topo */
+  left: 0; /* Alinha à esquerda */
+  top: 0; /* Alinha ao topo */
+  width: 100%; /* Define a largura como 100% da tela */
+  height: 100%; /* Define a altura como 100% da tela */
+  overflow: auto; /* Adiciona uma barra de rolagem se o conteúdo ultrapassar o tamanho da tela */
+  background-color: rgb(0,0,0); /* Define a cor de fundo como preta */
+}
+.modal-content { /* Estiliza elementos com a classe modal-content */
+  margin: auto; /* Centraliza horizontalmente */
+  display: block; /* Define como bloco */
+  width: 80%; /* Define a largura como 80% do contêiner */
+  max-width: 700px; /* Define a largura máxima como 700 pixels */
+}
+.close { /* Estiliza elementos com a classe close */
+  position: absolute; /* Define a posição como absoluta */
+  top: 15px; /* Alinha 15 pixels do topo */
+  right: 35px; /* Alinha 35 pixels da direita */
+  color: #fff; /* Define a cor do texto como branca */
+  font-size: 40px; /* Define o tamanho da fonte como 40 pixels */
+  font-weight: bold; /* Define a fonte como negrito */
+  transition: 0.3s; /* Define a transição das propriedades como 0.3 segundos */
+}
+.close:hover, /* Estiliza elementos com a classe close ao passar o mouse */
+.close:focus { /* Estiliza elementos com a classe close quando estão em foco */
+  color: #bbb; /* Muda a cor do texto para cinza claro */
+  text-decoration: none; /* Remove a decoração do texto */
+  cursor: pointer; /* Muda o cursor para um ponteiro */
+}

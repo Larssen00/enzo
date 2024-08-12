@@ -1,0 +1,58 @@
+.main-bg {
+  background-image: url('../img/Enzo\ Motos.png');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+.v2-bg {
+  background-image: url('../img/abstract-envelope.svg');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+.v3-bg {
+  background-image: url('../img/wp3705550.webp');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+.v4-bg {
+  background-image: url('../img/abstract-envelope.svg');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+} 
+.v6-bg {
+  background-image: url('../img/Design\ sem\ nome.png');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);}
+
+.white-bg {
+  background: var(--white-color);
+}
+
+.main-content {
+  max-width: 120rem;
+  /* 120rem = 1200px */
+  margin: 0 auto;
+  /* padding: 3rem; */
+  padding: 10rem var(--gap);
+  /* correção */
+}
+
+.section {
+  min-height: 100vh;
+  /* parte 3/4 */
+  /* color: var(--primary-color); */
+}
+
+/* parte 3 */
+.menu-spacing {
+  height: 6.5rem;
+}
+
+body .full-width{
+  width: 100%;
+  flex: 1 1 100%;
+}
